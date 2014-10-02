@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+ <user>root</user>
+ <password>tintin</password>
+ <host>localhost</host>
+ <bd>locan</bd>
+</configuration>

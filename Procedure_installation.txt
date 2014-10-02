@@ -1,0 +1,6 @@
+Procédure d'Installation
+
+1-Installation du gestionnaire de serveur Apache, de base de données Mysql et d'interpréteur de PHP.
+	-Télécharger la dernière version de wamp sur le site du constructeur http://www.wampserver.com/ 
+	- Sinon prendre dans le repertoire "systemes" ledit logiciel. Selon votre configuration, choisir le 32bits ou le 64bits.
+	-Installer le logiciel sous le repertoire C:\wamp

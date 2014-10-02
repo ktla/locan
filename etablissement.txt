@@ -1,0 +1,24 @@
+Instead of having to define your arg list twice, and keeping to the good style of initialising your variables in the head of your class, you can use (PHP5):
+
+<?php
+class myclass {
+     public $value = null;
+    public $key = null;
+    public $column = null;
+    public $table = null;
+    public function __construct() {
+        $vars = get_class_vars();
+        for($i=0; $i<func_num_args();$i++) {
+            $this->${$vars[$i]}=func_get_arg($i);
+        }
+    }
+}
+?>
+
+which should allow you to set variables while retaining their default values if they are not set (in this case, null), without having to mess around with functions to retain default values so is much neater (just don't change the order you declare your vars!)
+
+<?php
+//usage
+$c = new myclass("value", "tablekey", "tablecol", "table");
+echo $c->key;
+//prints 'tablekey'
